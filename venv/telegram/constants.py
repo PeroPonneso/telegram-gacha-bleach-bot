@@ -1,0 +1,2 @@
+API_KEY = '5209981977:AAEzd8DSO4ioxje1YUGF_N6bB7S8FnDStVo'
+DB_PATH = 'database.db'
