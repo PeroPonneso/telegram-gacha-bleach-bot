@@ -1,0 +1,6 @@
+$_Ams-123X-XMoonGundam
+    Install pip install telegram
+    Install pip install python-telegram-bot
+    If you are using virtual environment , make sure it is activate
+    Now import from telegram.ext import *
+    sudo apt install sqlite3

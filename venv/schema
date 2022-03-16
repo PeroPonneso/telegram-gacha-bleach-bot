@@ -1,0 +1,45 @@
+Table account{
+  id int [pk]
+  is_bot bool [default:False]
+  first_name varchar(50) [not null]
+  last_name varchar(50)
+  username varchar(50)
+  language_code varchar(50)
+  created_on datetime
+}
+
+Table card{
+  id int [pk]
+  rarity int [not null]
+  name varchar(100)
+  art_path varchar(100)
+  art_name varchar(100)
+  created_on datetime
+  id_pack int [not null]
+}
+
+Table pack{
+  id int [pk]
+  name varchar(100) [not null]
+  created_on datetime
+  start_date datetime
+  end_date datetime
+}
+
+Table x{
+  id int [pk]
+  amount int [default: 0]
+  created_on datetime
+  modified_on datetime
+  id_account int [not null]
+  id_card int [not null]
+}
+
+
+//pack has many card
+Ref: card.id_pack > pack.id
+
+Ref: x.id_card > card.id
+//account has many cards
+Ref: x.id_account > account.id
+
