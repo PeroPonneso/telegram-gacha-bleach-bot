@@ -1,2 +1,2 @@
-# telegram-gacha-bleach-bot
-Gacha for telegram with a Bleach theme
+# telegram-gatcha-bot
+A telegram bot similar to waifu catcher
